@@ -21,5 +21,13 @@ namespace Laboratorio4_ED1.Models.Storage
                 return _instance;
             }
         }
+
+
+        public Hash<TasksModel> Hash = new Hash<TasksModel>();
+        public List<Developer> Developers = new List<Developer>();
+        public string CurrentUser;
+
+
+
     }
 }
