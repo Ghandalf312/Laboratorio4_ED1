@@ -10,7 +10,6 @@ using Laboratorio4_ED1.Models;
 using Laboratorio4_ED1.Models.Storage;
 using System.IO;
 using System.Web;
-using System.Web.Mvc;
 
 
 namespace Laboratorio4_ED1.Controllers
@@ -19,6 +18,7 @@ namespace Laboratorio4_ED1.Controllers
     {
         public static int NoOfDeveloper = 0;
         public static string FilePath = System.Web.HttpContext.Current.Server.MapPath("~/Files/");
+        
 
         public ActionResult Login(int? isFirstTime)
         {
@@ -88,7 +88,7 @@ namespace Laboratorio4_ED1.Controllers
                 }
                 else
                 {
-                    var user = Singleton.Instance.Developers.Find(x => x.User == Storage.Instance.CurrentUser);
+                    var user = Singleton.Instance.Developers.Find(x => x.User == Singleton.Instance.CurrentUser);
                     if (user == null)
                     {
                         var NewUser = new Developer() { User = Singleton.Instance.CurrentUser, Id = NoOfDeveloper };
@@ -110,7 +110,7 @@ namespace Laboratorio4_ED1.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateTask(FormCollection collection)
+        public ActionResult CreateTask(IFormCollection collection)
         {
             int Priority = 0;
             var priority = collection["Priority"];
@@ -189,7 +189,7 @@ namespace Laboratorio4_ED1.Controllers
                     {
                         if (developer.Tasks != null)
                         {
-                            if (developer.Tasks.TasksQuantity != 0)
+                            if (developer.Tasks.tasksQuantity != 0)
                             {
                                 var taskToDelete = developer.Tasks.Delete();
                                 Singleton.Instance.Hash.Delete(taskToDelete.Key);
@@ -218,7 +218,7 @@ namespace Laboratorio4_ED1.Controllers
             var developer = Singleton.Instance.Developers.Where(x => x.Id == id).First();
             var taskList = new List<TasksModel>();
             var developerCopy = new Developer() { Tasks = (PriorityQueue<string>)developer.Tasks.Clone(), User = developer.User };
-            for (int i = 0; i < developerCopy.Tasks.TasksQuantity; i++)
+            for (int i = 0; i < developerCopy.Tasks.tasksQuantity; i++)
             {
                 taskList.Add(Singleton.Instance.Hash.Search(developerCopy.Tasks.Delete().Key).Value);
             }
