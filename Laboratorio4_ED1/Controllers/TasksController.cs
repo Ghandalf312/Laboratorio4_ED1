@@ -2,23 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
-
 using CustomGenerics;
-using Laboratorio4_ED1.Models;
 using Laboratorio4_ED1.Models.Storage;
+using Laboratorio4_ED1.Models;
 using System.IO;
-using System.Web;
-
 
 namespace Laboratorio4_ED1.Controllers
 {
     public class TasksController : Controller
     {
+        private static readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _env;
         public static int NoOfDeveloper = 0;
-        public static string FilePath = System.Web.HttpContext.Current.Server.MapPath("~/Files/");
-        
+        public static string FilePath = Path.Combine(_env.WebRootPath, "Files");
 
         public ActionResult Login(int? isFirstTime)
         {
@@ -267,13 +264,5 @@ namespace Laboratorio4_ED1.Controllers
             SaveTasks();
             return View("Exit");
         }
-
-
-
-
-
-
-
-
     }
 }

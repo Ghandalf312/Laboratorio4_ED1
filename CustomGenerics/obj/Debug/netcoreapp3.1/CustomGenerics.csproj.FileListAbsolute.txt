@@ -1,0 +1,8 @@
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\bin\Debug\netcoreapp3.1\CustomGenerics.deps.json
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\bin\Debug\netcoreapp3.1\CustomGenerics.dll
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\bin\Debug\netcoreapp3.1\CustomGenerics.pdb
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\obj\Debug\netcoreapp3.1\CustomGenerics.csprojAssemblyReference.cache
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\obj\Debug\netcoreapp3.1\CustomGenerics.AssemblyInfoInputs.cache
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\obj\Debug\netcoreapp3.1\CustomGenerics.AssemblyInfo.cs
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\obj\Debug\netcoreapp3.1\CustomGenerics.dll
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\CustomGenerics\obj\Debug\netcoreapp3.1\CustomGenerics.pdb
