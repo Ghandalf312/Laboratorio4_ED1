@@ -1,0 +1,58 @@
+﻿@model Laboratorio4_ED1.Models.Developer
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DeveloperProfile</h2>
+
+<h3><strong>@Html.DisplayFor(model => model.User)</strong></h3>
+
+<h4>You have <strong>@Html.DisplayFor(model => model.Tasks.TasksQuantity)</strong> pending tasks</h4>
+
+<h4><strong>Your current task information is shown below</strong></h4>
+
+@Html.ActionLink("Add Task", "CreateTask")
+
+<div>
+    <h4>Tasks</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTask.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTask.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTask.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTask.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTask.Proyect)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTask.Proyect)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentTask.DueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentTask.DueDate)
+        </dd>
+    </dl>
+</div>
+
+@Html.ActionLink("Mark as done and get the next task", "DeveloperProfile", new { change = 1 })
