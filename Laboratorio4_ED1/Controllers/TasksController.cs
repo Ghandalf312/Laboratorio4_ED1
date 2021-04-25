@@ -213,6 +213,7 @@ namespace Laboratorio4_ED1.Controllers
 
         public ActionResult DeveloperReview(int id)
         {
+
             var developer = Singleton.Instance.Developers.Where(x => x.Id == id).First();
             var taskList = new List<TasksModel>();
             var developerCopy = new Developer() { Tasks = (PriorityQueue<string>)developer.Tasks.Clone(), User = developer.User };
@@ -221,7 +222,9 @@ namespace Laboratorio4_ED1.Controllers
                 taskList.Add(Singleton.Instance.Hash.Search(developerCopy.Tasks.Delete().Key).Value);
             }
             var dev = new DeveloperForReview() { User = developer.User, Tasks = taskList };
+
             return View(dev);
+
         }
 
         public void SaveUsers()
@@ -240,6 +243,10 @@ namespace Laboratorio4_ED1.Controllers
             System.IO.File.WriteAllText(path, text);
             // Solución obtenida en: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file
             // y en :https://stackoverflow.com/questions/4680284/system-io-file-create-locking-a-file
+
+
+
+
         }
 
         public void SaveTasks()
@@ -257,13 +264,19 @@ namespace Laboratorio4_ED1.Controllers
             }
             System.IO.File.Create(path).Close();
             System.IO.File.WriteAllText(path, text);
+
+
+            //Application.Exit();
         }
 
         public ActionResult Exit()
         {
             SaveUsers();
             SaveTasks();
+           
             return View("Exit");
         }
+
+
     }
 }

@@ -27,14 +27,39 @@
                 <input asp-for="Proyect" class="form-control" />
                 <span asp-validation-for="Proyect" class="text-danger"></span>
             </div>
+
+
             <div class="form-group">
                 <label asp-for="Priority" class="control-label"></label>
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                    <button type="button" class="btn btn-primary">low</button>
-                    <button type="button" class="btn btn-primary">mid</button>
-                    <button type="button" class="btn btn-primary">high</button>
+                    <div>
+                    @Html.RadioButton("Priority", "high") High Priority
+                </div>
+                <div>
+                    @Html.RadioButton("Priority", "mid") Medium Priority
+                </div>
+                <div>
+                    @Html.RadioButton("Priority", "low") Low Priority
+                </div>
+                    <span asp-validation-for="Priority" class="text-danger"></span>
                 </div>
             </div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
             <div class="form-group">
                 <label asp-for="AssignedDeveloper" class="control-label"></label>
                 <input asp-for="AssignedDeveloper" class="form-control" />
