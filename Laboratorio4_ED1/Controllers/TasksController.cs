@@ -189,8 +189,9 @@ namespace Laboratorio4_ED1.Controllers
                         {
                             if (developer.Tasks.tasksQuantity != 0)
                             {
-                                var taskToDelete = developer.Tasks.Delete();
-                                Singleton.Instance.Hash.Delete(taskToDelete.Key);
+                                Singleton.Instance.Hash.Delete(developer.Tasks.Root.Key);
+                                developer.Tasks.Delete();
+                                
                             }
                         }
                     }
@@ -265,16 +266,13 @@ namespace Laboratorio4_ED1.Controllers
             System.IO.File.Create(path).Close();
             System.IO.File.WriteAllText(path, text);
 
-
-            //Application.Exit();
         }
 
         public ActionResult Exit()
         {
             SaveUsers();
             SaveTasks();
-           
-            return View("Exit");
+            return View();
         }
 
 

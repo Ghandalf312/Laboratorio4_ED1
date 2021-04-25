@@ -229,3 +229,6 @@ C:\Users\ZeroJChang\Desktop\Laboratorio 4\Laboratorio4_ED1\Laboratorio4_ED1\obj\
 C:\Users\ZeroJChang\Desktop\Laboratorio 4\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\DevelopersList.cshtml.g.cs
 C:\Users\ZeroJChang\Desktop\Laboratorio 4\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\DeveloperReview.cshtml.g.cs
 C:\Users\ZeroJChang\Desktop\Laboratorio 4\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\Exit.cshtml.g.cs
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\DeveloperReview.cshtml.g.cs
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\DevelopersList.cshtml.g.cs
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\Exit.cshtml.g.cs
