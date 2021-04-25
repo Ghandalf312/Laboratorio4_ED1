@@ -108,3 +108,6 @@ C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\L
 C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Laboratorio4_ED1.csproj.CopyComplete
 C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Laboratorio4_ED1.dll
 C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Laboratorio4_ED1.pdb
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\Login.cshtml.g.cs
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\DeveloperProfile.cshtml.g.cs
+C:\Users\Diego\Desktop\URL\Primer Ciclo 2021\Estructura de Datos I\Laboratorio\Laboratorio4_ED1\Laboratorio4_ED1\obj\Debug\netcoreapp3.1\Razor\Views\Tasks\CreateTask.cshtml.g.cs

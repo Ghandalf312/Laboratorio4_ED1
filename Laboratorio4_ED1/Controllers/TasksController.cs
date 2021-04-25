@@ -8,14 +8,15 @@ using CustomGenerics;
 using Laboratorio4_ED1.Models.Storage;
 using Laboratorio4_ED1.Models;
 using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Laboratorio4_ED1.Controllers
 {
     public class TasksController : Controller
     {
-        private static readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _env;
         public static int NoOfDeveloper = 0;
-        public static string FilePath = Path.Combine(_env.WebRootPath, "Files");
+        public static string _path = Path.GetFullPath("Laboratorio4_ED1");
+        public string FilePath = Path.Combine(_path, "Files");
 
         public ActionResult Login(int? isFirstTime)
         {
@@ -155,7 +156,7 @@ namespace Laboratorio4_ED1.Controllers
                     {
                         if (developer.Tasks == null)
                         {
-                            developer.Tasks = new CustomGenerics.PriorityQueue<string>();
+                            developer.Tasks = new PriorityQueue<string>();
                         }
 
                         developer.Tasks.AddTask(newTask.Title, newTask.DueDate, newTask.Priority);

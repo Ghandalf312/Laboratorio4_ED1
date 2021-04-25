@@ -1,0 +1,58 @@
+﻿@model Laboratorio4_ED1.Models.TasksModel
+
+@{
+    ViewData["Title"] = "CreateTask";
+}
+
+<h1>CreateTask</h1>
+
+<h4>TasksModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateTask">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Proyect" class="control-label"></label>
+                <input asp-for="Proyect" class="form-control" />
+                <span asp-validation-for="Proyect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Priority" class="control-label"></label>
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-primary">low</button>
+                    <button type="button" class="btn btn-primary">mid</button>
+                    <button type="button" class="btn btn-primary">high</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="AssignedDeveloper" class="control-label"></label>
+                <input asp-for="AssignedDeveloper" class="form-control" />
+                <span asp-validation-for="AssignedDeveloper" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DueDate" class="control-label"></label>
+                <input asp-for="DueDate" class="form-control" />
+                <span asp-validation-for="DueDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="DeveloperProfile">Back to Profile</a>
+</div>
+
